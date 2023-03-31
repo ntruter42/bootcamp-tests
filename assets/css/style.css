@@ -1,0 +1,9 @@
+body {
+	background-color: black !important;
+}
+
+#mocha {
+	padding: 10px 20px 30px 20px;
+	outline: 1px solid grey;
+	border-radius: 10px;
+}
