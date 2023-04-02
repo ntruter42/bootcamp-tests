@@ -2,8 +2,24 @@ body {
 	background-color: black !important;
 }
 
+body h1 {
+	padding-left: 20px;
+}
+
 #mocha {
-	padding: 10px 20px 30px 20px;
 	outline: 1px solid grey;
+	padding: 10px 20px 30px 20px;
 	border-radius: 10px;
+}
+
+#mocha h1 {
+	background-color: #222;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-left: -10px;
+	margin-bottom: 10px;
+}
+
+#mocha .test.pass::before {
+	color: cyan;
 }
