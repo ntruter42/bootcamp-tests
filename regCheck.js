@@ -1,3 +1,3 @@
-function regCheck(regNum, loc) {
-	return regNum.endsWith(loc);
+function regCheck(regNum, loc){
+	return regNum.trim().endsWith(loc);
 }

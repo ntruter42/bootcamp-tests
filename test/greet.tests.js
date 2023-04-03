@@ -3,15 +3,15 @@ describe('greet', function () {
 		assert.equal("Hello, Nicholas", greet("Nicholas"));
 	});
 
-	it('should return "Hello, Malebo" when called with "Malebo"', function () {
-		assert.equal("Hello, Malebo", greet("Malebo"));
+	it('should return "Hello, Mthunzi." when called with "    Mthunzi."', function () {
+		assert.equal("Hello, Mthunzi", greet("    Mthunzi."));
 	});
 
-	it('should return "Hello, Mthunzi" when called with "Mthunzi"', function () {
-		assert.equal("Hello, Mthunzi", greet("Mthunzi"));
+	it('should return "Hello, Mal ebo" when called with "Mal, ..ebo,"', function () {
+		assert.equal("Hello, Mal ebo", greet("Mal, ..ebo,"));
 	});
 
-	it('should return "Hello, Katleho" when called with "Katleho"', function () {
-		assert.equal("Hello, Katleho", greet("Katleho"));
+	it('should return "Hello, " when called with ""', function () {
+		assert.equal("Argument must be a string and not empty.", greet(""));
 	});
 });

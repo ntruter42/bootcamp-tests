@@ -38,6 +38,25 @@ describe('mostProfitableDepartment', function () {
 		{ department: 'steelwork', sales: 1500, day: 'Wednesday' },
 		{ department: 'carpentry', sales: 8009, day: 'Wednesday' },
 	];
+
+	var salesData3 = [
+		{ department: 'furniture', sales: 3500, day: 'Monday' },
+		{ department: 'garden', sales: 2500, day: 'Monday' },
+		{ department: 'plumbing', sales: 6500, day: 'Monday' },
+		{ department: 'furniture', sales: 8500, day: 'Tuesday' },
+		{ department: 'garden', sales: 4505, day: 'Tuesday' },
+		{ department: 'plumbing', sales: 1540, day: 'Tuesday' },
+		{ department: 'furniture', sales: 2500, day: 'Wednesday' },
+		{ department: 'garden', sales: 6507, day: 'Wednesday' },
+		{ department: 'plumbing', sales: 5009, day: 'Wednesday' },
+		{ department: 'furniture', sales: 9000, day: 'Thursday' },
+		{ department: 'garden', sales: 12007, day: 'Thursday' },
+		{ department: 'plumbing', sales: 6109, day: 'Thursday' },
+		{ department: 'furniture', sales: 7005, day: 'Friday' },
+		{ department: 'garden', sales: 10006, day: 'Friday' },
+		{ department: 'plumbing', sales: 13109, day: 'Friday' },
+	];
+
 	
 	it('should return "outdoor" when called with "salesData1"', function () {
 		assert.equal(mostProfitableDepartment(salesData1), 'outdoor');
@@ -45,5 +64,9 @@ describe('mostProfitableDepartment', function () {
 
 	it('should return "electronics" when called with "salesData2"', function () {
 		assert.equal(mostProfitableDepartment(salesData2), 'electronics');
+	});
+
+	it('should return "garden" when called with "salesData3"', function () {
+		assert.equal(mostProfitableDepartment(salesData3), 'garden');
 	});
 });
