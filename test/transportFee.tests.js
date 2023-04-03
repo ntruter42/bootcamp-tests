@@ -1,4 +1,4 @@
-describe('transportFee()', function () {
+describe('transportFee', function () {
 	it('should return "R20" when called with "morning"', function () {
 		assert.equal(transportFee('morning'), 'R20');
 	});

@@ -1,4 +1,4 @@
-describe('findItemsOver20()', function () {
+describe('findItemsOver20', function () {
 	var itemList1 = [
 		{ name: 'apples', qty: 10 },
 		{ name: 'pears', qty: 37 },

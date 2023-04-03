@@ -1,4 +1,4 @@
-describe('greet()', function () {
+describe('greet', function () {
 	it('should return "Hello, Nicholas" when called with "Nicholas"', function () {
 		assert.equal("Hello, Nicholas", greet("Nicholas"));
 	});

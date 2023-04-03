@@ -1,4 +1,4 @@
-describe('mostProfitableDepartment()', function () {
+describe('mostProfitableDepartment', function () {
 	var salesData1 = [
 		{ department: 'hardware', sales: 4500, day: 'Monday' },
 		{ department: 'outdoor', sales: 1500, day: 'Monday' },

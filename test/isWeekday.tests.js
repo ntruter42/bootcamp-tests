@@ -1,4 +1,4 @@
-describe('isWeekday()', function () {
+describe('isWeekday', function () {
 	it('should return "true" when called with "Monday"', function () {
 		assert.equal(isWeekday('Monday'), true);
 	});

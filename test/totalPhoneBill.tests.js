@@ -1,4 +1,4 @@
-describe('totalPhoneBill()', function () {
+describe('totalPhoneBill', function () {
 	it('should return "R7.45" when called with "call, sms, call, sms, sms"', function () {
 		assert.equal(totalPhoneBill('call, sms, call, sms, sms'), 'R7.45');
 	});

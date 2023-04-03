@@ -1,4 +1,4 @@
-describe('regCheck()', function () {
+describe('regCheck', function () {
 	it('should return "true" when called with "DC 55 YU GP" and "GP"', function () {
 		assert.equal(regCheck('DC 55 YU GP', 'GP'), true);
 	});

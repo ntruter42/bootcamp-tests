@@ -1,4 +1,4 @@
-describe('fromWhere()', function () {
+describe('fromWhere', function () {
 	it('should return "Bellville" when called with "CY 567489"', function () {
 		assert.equal(fromWhere('CY 567489'), 'Bellville'); 
 	});

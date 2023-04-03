@@ -1,4 +1,4 @@
-describe('countAllFromTown()', function () {
+describe('countAllFromTown', function () {
 	it('should return "3" when called with "CL 124,CY 567,CL 345, CJ 456,CL 341" and "CL"', function () {
 		assert.equal(countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341', 'CL'), 3);
 	});
