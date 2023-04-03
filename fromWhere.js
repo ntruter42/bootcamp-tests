@@ -1,5 +1,5 @@
 function fromWhere(loc) {
-	switch (loc) {
+	switch (loc.slice(0,2)) {
 		case "CY":
 			return "Bellville";
 		case "CJ":
