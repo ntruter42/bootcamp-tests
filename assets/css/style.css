@@ -1,25 +1,84 @@
-/* body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+* {
+	font-family: 'Segoe UI', sans-serif;
+}
+
+body {
 	background-color: black !important;
 }
 
 body h1 {
+	font-family: 'Lato', 'Segoe UI', sans-serif;
 	padding-left: 20px;
 }
 
 #mocha {
-	outline: 1px solid grey;
+	outline: 1px solid #444;
 	padding: 10px 20px 30px 20px;
 	border-radius: 10px;
 }
 
 #mocha h1 {
 	background-color: #222;
+	color: cyan;
 	border-radius: 5px;
 	padding-left: 10px;
+	padding-bottom: 5px;
 	margin-left: -10px;
 	margin-bottom: 10px;
 }
 
+#mocha h2 {
+	color: #fff;
+}
+
 #mocha .test.pass::before {
 	color: cyan;
-} */
+}
+
+#mocha-stats {
+	background-image: linear-gradient(90deg, #0000, #0008, #222f);
+	border-radius: 100px 100px 100px 100px;
+	padding-top: 4px !important;
+	padding-left: 12px !important;
+}
+
+#mocha-stats:hover {
+	background-image: linear-gradient(90deg, #222, #222, #222);
+	outline: 2px solid #444;
+	padding-top: 4px !important;
+	padding-left: 12px !important;
+}
+
+.suite li {
+	background-image: linear-gradient(90deg, #0000, #0000, #111);
+	border-radius: 10px;
+	padding-bottom: 3px !important;
+	margin-bottom: 4px !important;
+}
+
+#mocha .test pre {
+	background-color: #222;
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+#mocha .test a.replay {
+	background-color: #0000;
+	box-shadow: none;
+}
+
+#mocha .test:hover a.replay {
+	box-shadow: none;
+	transform: rotate(90deg);
+	transform: scale(2) translateX(-2px) translateY(-2px);
+	color: cyan;
+}
+
+@media screen and (min-width: 800px) {
+	.suite li {
+		background-image: linear-gradient(90deg, #0000, #111);
+	}
+}
