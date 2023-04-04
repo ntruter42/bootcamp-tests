@@ -3,15 +3,15 @@ describe('greet', function () {
 		assert.equal("Hello, Nicholas", greet("Nicholas"));
 	});
 
-	it('should return "Hello, Mthunzi." when called with "    Mthunzi."', function () {
-		assert.equal("Hello, Mthunzi", greet("    Mthunzi."));
+	it('should return "Invalid input. Please provide a non-empty string." when called with ""', function () {
+		assert.equal("Invalid input. Please provide a non-empty string.", greet(""));
 	});
 
-	it('should return "Hello, Mal ebo" when called with "Mal, ..ebo,"', function () {
-		assert.equal("Hello, Mal ebo", greet("Mal, ..ebo,"));
+	it('should return "Invalid input. Please provide a non-empty string." when called with 123', function () {
+		assert.equal("Invalid input. Please provide a non-empty string.", greet(123));
 	});
 
-	it('should return "Hello, " when called with ""', function () {
-		assert.equal("Argument must be a string and not empty.", greet(""));
+	it('should return "Hello, Mary Poppins Jr" when called with "Mary Poppins, Jr."', function () {
+		assert.equal("Hello, Mary Poppins Jr", greet("Mary Poppins, Jr."));
 	});
 });

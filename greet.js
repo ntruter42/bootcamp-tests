@@ -1,6 +1,6 @@
 function greet(name) {
-	if (typeof name === "string" && name !== "")
-		return "Hello, " + name.replace(/[,.]/g,'').trim();
-	return "Argument must be a string and not empty.";
+	if (typeof name !== 'string' || name.trim().length === 0) {
+		return "Invalid input. Please provide a non-empty string.";
+	}
+	return "Hello, " + name.replace(/[,.]/g, '').trim();
 }
-console.log(greet("hello, ..world"));

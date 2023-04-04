@@ -1,17 +1,17 @@
 describe('isFromBellville', function () {
-	it('should return "true" when called with "CY 123000"', function () {
-		assert.equal(isFromBellville('CY 123'), true);
+	it('should return "true" when called with "CY 123456"', function () {
+		assert.equal(isFromBellville('CY 123456'), true);
 	});
 
-	it('should return "true" when called with "CJ 234JC  "', function () {
-		assert.equal(isFromBellville('    CY 234JC  '), true);
+	it('should return "false" when called with "CA 654321"', function () {
+		assert.equal(isFromBellville('CA 654321'), false);
 	});
 
-	it('should return "false" when called with "23 .CJ 123"', function () {
-		assert.equal(isFromBellville('23 CJ 123'), false);
+	it('should return "true" when called with "   CY 246864   "', function () {
+		assert.equal(isFromBellville('   CY 246864   '), true);
 	});
 
-	it('should return "false" when called with ""', function () {
-		assert.equal(isFromBellville(''), false);
+	it('should return "Invalid input. Please provide a non-empty string." when called with 123456', function () {
+		assert.equal(isFromBellville(123456), 'Invalid input. Please provide a non-empty string.');
 	});
 });

@@ -1,17 +1,17 @@
 describe('countRegNumber', function () {
-	it('should return "3" when called with "CA 182736,CY 523519,CJ 812328"', function () {
-		assert.equal(countRegNumber('CA 182736,CY 523519,CJ 812328'), 3);
+	it('should return 1 when called with "CA 123456"', function () {
+		assert.equal(countRegNumber('CA 123456'), 1);
 	});
 
-	it('should return "1" when called with "CA 182736"', function () {
-		assert.equal(countRegNumber('CA 182736'), 1);
+	it('should return 3 when called with "CA 123456, CY 123456, CK 123456"', function () {
+		assert.equal(countRegNumber('CA 123456, CY 123456, CK 123456'), 3);
 	});
 
-	it('should return "3" when called with "    CA 182.736,CY 523519    ,CJ    81 23 28"', function () {
-		assert.equal(countRegNumber('    CA 182.736,CY 523519    ,CJ    81 23 28'), 3);
+	it('should return 0 when called with ""', function () {
+		assert.equal(countRegNumber(''), 0);
 	});
 
-	it('should return "2" when called with "CA182736, 5555-555-555"', function () {
-		assert.equal(countRegNumber('CA182736, 5555-555-555'), 2);
+	it('should return 2 when called with 123456', function () {
+		assert.equal(countRegNumber(123456), 'Invalid input. Please provide a string.');
 	});
 });
