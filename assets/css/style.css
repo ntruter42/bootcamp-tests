@@ -72,7 +72,6 @@ body h1 {
 
 #mocha .test:hover a.replay {
 	box-shadow: none;
-	transform: rotate(90deg);
-	transform: scale(2) translateX(-2px) translateY(-2px);
+	transform: rotate(90deg) translateX(-2px) translateY(1px);
 	color: cyan;
 }
